@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f67590;
+}
+
+.main, .info, .mountain, .gallery, .offer, .performance, .newsletter, footer {
+    width: 100%;
+    max-width: 1500px;
+}
+
+.btn {
+    margin: 12px 0 0 0;
+    padding: 12px 30px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #f66483;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .4s ease-in-out;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+#burger {
+    color: #fff;
+}
+
+.main {
+    margin: 100px auto 0 auto;
+    background: #f66483;
+}
+
+.main .nav {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.main .list a {
+    margin: 0 26px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main .list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .list.show {
+    display: none;
+}
+
+.main .wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main .main-info {
+    width: 100%;
+    max-width: 47%;
+}
+
+.main .main-info h1 {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.main .main-info p {
+    margin: 10px 0;
+    color: #fff;
+    font-weight: 300;
+}
+
+.main .main-info i, .newsletter .adress i {
+    margin-left: 4px;
+}
+
+.main .main-info .btn:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main .main-pic img, .info .info-pic img, .mountain .left-mt img, .mountain .right-mt img, .gallery .gallery-card img, .performance .left-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.info {
+    margin: 0 auto;
+    background: #fff;
+}
+
+.info .container {
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .info-card {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+}
+
+.info .info-pic {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+}
+
+.info .info-text {
+    width: 100%;
+    max-width: 220px;
+    margin-left: 20px;
+}
+
+.info .info-text h2 {
+    margin: 0;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.info .info-text p {
+    margin: 12px 0;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.info .info-text a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .4s ease-in-out;
+}
+
+.info .info-text a:hover {
+    color: #f66483;
+}
+
+.mountain {
+    margin: 0 auto;
+    display: flex;
+}
+
+.mountain .left-mt, .mountain .right-mt {
+    width: 100%;
+    max-width: 50%;
+    height: 400px;
+    position: relative;
+}
+
+.mountain .text-mt {
+    width: 100%;
+    max-width: 90%;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    text-align: center;
+    color: #fff;
+}
+
+.mountain .text-mt h1 {
+    margin: 0;
+}
+
+.mountain .text-mt p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.gallery {
+    margin: 0 auto;
+    background: #fff;
+}
+
+.gallery .container {
+    max-width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery .gallery-card:nth-child(1), .gallery .gallery-card:nth-child(7) {
+    width: 100%;
+    max-width: 64%;
+}
+
+.gallery .gallery-card {
+    width: 100%;
+    max-width: 31%;
+    height: 200px;
+    margin: 14px 0;
+}
+
+.offer {
+    margin: 0 auto;
+    background: #f9faff;
+}
+
+.offer .container {
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer .box {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.offer .icon i {
+    padding: 28px 24px;
+    background: #fff;
+    color: #f66483;
+}
+
+.offer .desc {
+    margin-left: 10px;
+}
+
+.offer .desc h5 {
+    margin: 0;
+    background: #f9faff;
+}
+
+.offer .desc p {
+    margin: 6px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+}
+
+.performance {
+    margin: 0 auto;
+}
+
+.performance .container {
+    max-width: 100%;
+    display: flex;
+}
+
+.performance .left-box, .performance .right-box {
+    width: 100%;
+    max-width: 50%;
+    height: 500px;
+}
+
+.performance .right-box {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.performance .right-box .text-pr {
+    width: 100%;
+    max-width: 80%;
+}
+
+.performance .right-box .text-pr h2 {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.performance .right-box .text-pr p {
+    margin-bottom: 5px;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.newsletter {
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.newsletter h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.newsletter p {
+    margin: 8px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.newsletter input[type=email] {
+    width: 40%;
+    padding: 18px 0;
+    border-radius: 50px;
+    border: none;
+}
+
+.newsletter input::placeholder {
+    padding-left: 14px;
+}
+
+.newsletter .btn {
+    margin-left: -200px;
+    padding: 10px 40px;
+    background: #f67590;
+    color: #fff;
+}
+
+footer {
+    margin: 0 auto 100px auto;
+    padding: 60px 0;
+    text-align: center;
+    background: url('img/f-bg.webp') no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer .cb {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .cl {
+    margin: 0;
+    color: #fff;
+}
+
+footer .cl:hover {
+    color: #000;
+}
+
+footer i {
+    margin: 6px 14px;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+footer i:hover {
+    color: #000;
+}
+
+@media(max-width: 800px) {
+    .info .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info .info-card {
+        margin: 20px 0;
+    }
+    .mountain {
+        flex-direction: column-reverse;
+    }
+    .mountain .left-mt, .mountain .right-mt {
+        max-width: 100%;
+    }
+    .gallery .gallery-card, .gallery .gallery-card:nth-child(1), .gallery .gallery-card:nth-child(7) {
+        max-width: 80%;
+    }
+    .offer .container {
+        max-width: 90%;
+        justify-content: center;
+    }
+    .offer .desc p {
+        margin: 0;
+        font-size: 18px;
+    }
+    .offer .box {
+        max-width: 500px;
+    }
+    footer .footer-wrap {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .newsletter input[type=email] {
+        width: 80%;
+    }
+    .newsletter .btn {
+        margin-left: -160px;
+        padding: 10px 20px;
+    }
+}
+
+@media(min-width: 801px) and (max-width: 1300px) {
+    .info .container {
+        max-width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .info .info-card {
+        margin: 20px 0;
+        max-width: 650px;
+    }
+    .info .info-card .info-text {
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mountain {
+        flex-direction: row-reverse;
+    }
+    .offer .container {
+        max-width: 90%;
+        justify-content: space-evenly;
+    }
+    .newsletter input[type=email] {
+        width: 60%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .main .container {
+        flex-direction: column;
+    }
+    .main .main-info {
+        max-width: 90%;
+        margin-bottom: 40px;
+    }
+    .performance .container {
+        flex-direction: column-reverse;
+    }
+    .performance .left-box, .performance .right-box {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1550px) {
+    .main, .info, .mountain, .gallery, .offer, .performance, .newsletter, footer {
+        max-width: 90%;
+    }
+    .main .nav .wrapper {
+        max-width: 90%;
+    }
+}
